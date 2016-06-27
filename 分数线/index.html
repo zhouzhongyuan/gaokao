@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="tabsContainer" style="display:block">
+    <table class="tbL2">
+        <tbody><tr class="tbL2title">
+            <td style="width:176px;">年份</td><td style="width:88px;">考生所在地</td><td style="width:88px;">考生类别</td><td style="width:111px;">批次</td><td style="width:115px;;">最低控制分数线</td><td style="width:150px;;">查询</td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2016</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批</td>
+            <td>451</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2015</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批</td>
+            <td>490</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2014</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批第一次填报志愿资格线</td>
+            <td>460</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2013</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科军检线</td>
+            <td>524</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2012</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科军检资格分数线</td>
+            <td>535</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2012</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批填报志愿资格线</td>
+            <td>430</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2010</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批省属线</td>
+            <td>542</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2010</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批市属线</td>
+            <td>528</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2010</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批青岛线</td>
+            <td>522</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2010</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批济南线</td>
+            <td>522</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2009</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批省属线</td>
+            <td>554</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2008</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批</td>
+            <td>556</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2007</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批</td>
+            <td>545</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+        <tr class="tbl2tbody">
+            <td>2006</td>
+            <td>山东</td>
+            <td>理科</td>
+            <td>本科二批</td>
+            <td>553</td>
+            <td><a href="http://zhiyuan.edu.sina.com.cn/query/tfks/" target="_blank">考生去向</a></td>
+        </tr>
+
+        </tbody></table>
+    <div class="pageNumWrap" totalnum="14" totalpage="1" page="1"></div>
+
+</div>
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+    var arr = [];
+    var all = $('.tbl2tbody');
+    console.log(all.length);
+    all.each(function(i,v) {
+        var year = $(all[i]).find('td:nth-child(1)').html().trim();
+        var provience = $(all[i]).find('td:nth-child(2)').html().trim();
+        var type = $(all[i]).find('td:nth-child(3)').html().trim();
+        var batch = $(all[i]).find('td:nth-child(4)').html().trim();
+        var score = $(all[i]).find('td:nth-child(5)').html().trim();
+        var obj = {};
+        obj.year = year;
+        obj.provience = provience;
+        obj.type = type;
+        obj.batch = batch;
+        obj.score = score;
+/*        obj.schoolName = v.innerText.trim();
+
+        //if cs
+        var ifCs = $(all[i]).parents('section').find('.cs').length;
+        if(ifCs){
+            obj.isCS = true;
+        }else{
+            obj.isCS = false;
+        }
+//        console.log(v.innerText.trim(),ifCs.length);
+        //is专升本
+        obj.isZSB = true;*/
+        arr.push(obj);
+
+    });
+    console.log(JSON.stringify(arr, null, '\t'));
+</script>
+
+
+
+</body>
+</html>
