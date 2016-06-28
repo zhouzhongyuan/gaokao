@@ -1,7 +1,10 @@
+var echarts = require('echarts');
+var passScore = require('../json/passScore.js');
+
 // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('main'));
-xAxisData = [];
-seriesData = [];
+var xAxisData = [];
+var seriesData = [];
 passScore.forEach(function(v){
     xAxisData.push(parseInt(v.year,10));
     seriesData.push(v.score);
@@ -39,3 +42,5 @@ var option = {
 
 // 使用刚指定的配置项和数据显示图表。
 myChart.setOption(option);
+module.exports = {myChart:myChart,option:option};
+

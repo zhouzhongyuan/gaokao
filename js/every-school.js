@@ -1,3 +1,6 @@
+var bzxy = require('../json/bzxy.js');
+var _ = require('underscore');
+var Chart = require('../js/pass-score.js');
 var everySchollScore = _.groupBy(bzxy,'school');
 
 for(var i in everySchollScore){
@@ -20,40 +23,13 @@ for(var i in everySchollScore){
         }
     }
     //push
-    option.legend.data.push(schoolName)
-    option.series.push(
+    Chart.option.legend.data.push(schoolName)
+    Chart.option.series.push(
         {
             name: schoolName,
             type: 'line',
             data: scoreData,
         });
-
-
 }
-myChart.setOption(option);
+Chart.myChart.setOption(Chart.option);
 
-
-//var jsj = newBzxy.计算机网络技术;
-//jsj = _.indexBy(jsj,'year');
-//console.log(jsj);
-//var bzxyScore = [];
-//_.each(jsj,function(v,i){
-//    "use strict";
-//    console.log(v.year);
-//    bzxyScore.push(v.score);
-//});
-//var deltaLength = 4 - bzxyScore.length;
-//if(deltaLength){
-//    for(var i=0;i<deltaLength;i++){
-//        bzxyScore.unshift(0);
-//    }
-//}
-//
-//option.series.push(
-//    {
-//    name: '滨州学院',
-//    type: 'line',
-//    data: bzxyScore,
-//    });
-//
-//myChart.setOption(option);

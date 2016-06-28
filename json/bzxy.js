@@ -72,6 +72,5 @@ var bzxy =
         "year":2013,
         "score":476
     }
-
-
-]
+];
+module.exports = bzxy;

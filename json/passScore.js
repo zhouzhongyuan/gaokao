@@ -94,3 +94,4 @@ var passScore =
     }*/
 ];
 passScore = passScore.reverse();
+module.exports = passScore;

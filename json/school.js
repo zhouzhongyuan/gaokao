@@ -153,4 +153,5 @@ var schoolList =
         "isCS": false,
         "isZSB": true
     }
-]
+];
+module.exports = schoolList;

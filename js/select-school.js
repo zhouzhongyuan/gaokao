@@ -1,8 +1,8 @@
-
+var $ = require('jquery');
+var schoolList = require('../json/school.js');
 $('#total').html(schoolList.length);
 var s = '';
 $(schoolList).each(function(i,v){
-    "use strict";
     if(v.isCS){
         s = s + '<div class="school">'+ v.schoolName;
         if(v.description){
@@ -15,3 +15,4 @@ $(schoolList).each(function(i,v){
     }
 });
 $('#school #list').html(s);
+module.exports = {};
