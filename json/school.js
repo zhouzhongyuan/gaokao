@@ -3,7 +3,9 @@ var schoolList =
     {
         "schoolName": "滨州学院",
         "isCS": true,
-        "isZSB": true
+        "isZSB": true,
+        "url":"http://zs.bzu.edu.cn/",
+        "city":"滨州市"
     },
     {
         "schoolName": "滨州医学院",
@@ -27,8 +29,10 @@ var schoolList =
     },
     {
         "schoolName": "济宁学院",
+        "description":"排除,计算机全都是校企合作类型",
         "isCS": true,
-        "isZSB": true
+        "isZSB": true,
+        "url":"http://zs.jnxy.edu.cn/"
     },
     {
         "schoolName": "济宁医学院",
@@ -42,11 +46,14 @@ var schoolList =
     },
     {
         "schoolName": "临沂大学",
+        "url":"http://zhaosheng.lyu.edu.cn/",
         "isCS": true,
         "isZSB": true
     },
     {
         "schoolName": "齐鲁理工学院",
+        "url":"http://www.xtxy.cn/zsw/",
+        "description": "民办,原曲阜师范大学杏坛学院",
         "isCS": true,
         "isZSB": true
     },
@@ -83,7 +90,9 @@ var schoolList =
     },
     {
         "schoolName": "山东交通学院",
-        "isCS": true,
+        "description": "排除,只有专升本,没有专科",
+        "url":"http://www.sdjtu.edu.cn/",
+        "isCS": false,
         "isZSB": true
     },
     {
@@ -93,7 +102,9 @@ var schoolList =
     },
     {
         "schoolName": "山东女子学院",
-        "isCS": true,
+        "url":"http://zsjy.sdwu.edu.cn/article/",
+        "description": "排除,只有专升本,没有专科",
+        "isCS": false,
         "isZSB": true
     },
     {
@@ -108,6 +119,7 @@ var schoolList =
     },
     {
         "schoolName": "泰山学院",
+        "url":"http://sec.tsu.edu.cn/www/zhaosheng/",
         "isCS": true,
         "isZSB": true
     },

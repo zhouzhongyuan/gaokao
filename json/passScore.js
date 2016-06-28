@@ -18,30 +18,24 @@ var passScore =
         "year": "2014",
         "provience": "山东",
         "type": "理科",
-        "batch": "本科二批第一次填报志愿资格线",
-        "score": "460"
+        "batch": "本科二批",
+        "score": "547"
     },
     {
         "year": "2013",
         "provience": "山东",
         "type": "理科",
-        "batch": "本科军检线",
-        "score": "524"
+        "batch": "本科二批",
+        "score": "471"
     },
-/*    {
-        "year": "2012",
-        "provience": "山东",
-        "type": "理科",
-        "batch": "本科军检资格分数线",
-        "score": "535"
-    },*/
+
     {
         "year": "2012",
         "provience": "山东",
         "type": "理科",
-        "batch": "本科二批填报志愿资格线",
-        "score": "430"
-    },
+        "batch": "本科二批",
+        "score": "515"
+    }/*,
     {
         "year": "2010",
         "provience": "山东",
@@ -49,7 +43,7 @@ var passScore =
         "batch": "本科二批省属线",
         "score": "542"
     },
-   /* {
+   /!* {
         "year": "2010",
         "provience": "山东",
         "type": "理科",
@@ -69,7 +63,7 @@ var passScore =
         "type": "理科",
         "batch": "本科二批济南线",
         "score": "522"
-    },*/
+    },*!/
     {
         "year": "2009",
         "provience": "山东",
@@ -97,6 +91,6 @@ var passScore =
         "type": "理科",
         "batch": "本科二批",
         "score": "553"
-    }
+    }*/
 ];
 passScore = passScore.reverse();

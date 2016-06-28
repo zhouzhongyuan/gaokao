@@ -3,3 +3,13 @@
     color: green;
     font-size: 2em;
 }
+a{
+    text-decoration: none;
+}
+.url{
+    padding-left: 20px;
+    color:blue;
+}
+.school{
+    padding: 10px;
+}
