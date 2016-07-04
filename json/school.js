@@ -109,6 +109,7 @@ var schoolList =
     },
     {
         "schoolName": "山东师范大学历山学院",
+        "description": "排除,只有专升本,没有专科",
         "isCS": true,
         "isZSB": true
     },
@@ -135,6 +136,7 @@ var schoolList =
     },
     {
         "schoolName": "烟台大学文经学院",
+        "description": "排除,只有专升本,没有专科",
         "isCS": true,
         "isZSB": true
     },
